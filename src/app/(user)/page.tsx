@@ -1,5 +1,7 @@
 import Logo from "@/components/logo";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import previewImage from "../../../public/PCC.jpg";
 
 export default function Home() {
@@ -11,17 +13,23 @@ export default function Home() {
         width={520}
         height={470}
         priority
+        className='rounded-md'
       />
       <div>
         <Logo />
-        <h1 className='text-3xl font-bold text-center text-slate-900'>
+        <h1 className='text-3xl font-bold text-center text-slate-900 mt-10'>
           Welcome to Pet Care
         </h1>
-        <p className='text-center text-slate-700'>
+        <p className='text-center'>
           Your one-stop solution for all your pet care needs.
         </p>
-        <div>
-          <button>SignUp</button>
+        <div className='mt-10 space-x-3'>
+          <Button asChild>
+            <Link href='/signup'>Get Started</Link>
+          </Button>
+          <Button asChild variant='secondary'>
+            <Link href='/signin'>Log In</Link>
+          </Button>
         </div>
       </div>
     </main>

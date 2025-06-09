@@ -6,14 +6,14 @@ import previewImage from "../../../public/PCC.jpg";
 
 export default function Home() {
   return (
-    <main className='bg-[#0f5b72] min-h-screen flex flex-col xl:flex-row items-center justify-center gap-10'>
+    <main className='bg-[#0691408e] min-h-screen flex flex-col xl:flex-row items-center justify-center gap-10'>
       <Image
         src={previewImage}
         alt='Preview of Next petCare'
         width={520}
         height={470}
         priority
-        className='rounded-md'
+        className='rounded-md border-4 border-amber-500'
       />
       <div>
         <Logo />

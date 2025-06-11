@@ -18,7 +18,7 @@ export default function Home() {
       <div>
         <Logo />
         <h1 className='text-3xl font-bold text-center text-slate-900 mt-10'>
-          Welcome to Pet Care
+          Welcome to Next PetCare
         </h1>
         <p className='text-center'>
           Your one-stop solution for all your pet care needs.
